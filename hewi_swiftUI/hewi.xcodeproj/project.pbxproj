@@ -37,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7954CE962612F26C00AF0795 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79EC0CF226088EEE00D3D515 /* Info.plist */,
+				79EC0CEA26088EEE00D3D515 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		79EC0CD826088EED00D3D515 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +65,11 @@
 		79EC0CE326088EED00D3D515 /* hewi */ = {
 			isa = PBXGroup;
 			children = (
+				7954CE962612F26C00AF0795 /* Resources */,
 				79EC0CE426088EED00D3D515 /* AppDelegate.swift */,
 				79EC0CE626088EED00D3D515 /* SceneDelegate.swift */,
 				79EC0CE826088EED00D3D515 /* ContentView.swift */,
-				79EC0CEA26088EEE00D3D515 /* Assets.xcassets */,
 				79EC0CEF26088EEE00D3D515 /* LaunchScreen.storyboard */,
-				79EC0CF226088EEE00D3D515 /* Info.plist */,
 				79EC0CEC26088EEE00D3D515 /* Preview Content */,
 			);
 			path = hewi;
@@ -289,7 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hewi/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = hewi/Info.plist;
+				INFOPLIST_FILE = hewi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hewi/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = hewi/Info.plist;
+				INFOPLIST_FILE = hewi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
