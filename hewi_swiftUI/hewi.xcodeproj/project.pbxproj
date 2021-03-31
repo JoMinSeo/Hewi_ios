@@ -48,6 +48,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		79B11D81261423A400CC381B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79EC0CE826088EED00D3D515 /* ContentView.swift */,
+				79B11D7E26140E3600CC381B /* ShowFunctionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		79EC0CD826088EED00D3D515 = {
 			isa = PBXGroup;
 			children = (
@@ -67,13 +76,12 @@
 		79EC0CE326088EED00D3D515 /* hewi */ = {
 			isa = PBXGroup;
 			children = (
+				79B11D81261423A400CC381B /* Views */,
 				7954CE962612F26C00AF0795 /* Resources */,
 				79EC0CE426088EED00D3D515 /* AppDelegate.swift */,
 				79EC0CE626088EED00D3D515 /* SceneDelegate.swift */,
-				79EC0CE826088EED00D3D515 /* ContentView.swift */,
 				79EC0CEF26088EEE00D3D515 /* LaunchScreen.storyboard */,
 				79EC0CEC26088EEE00D3D515 /* Preview Content */,
-				79B11D7E26140E3600CC381B /* ShowFunctionsView.swift */,
 			);
 			path = hewi;
 			sourceTree = "<group>";
