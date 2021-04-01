@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7935DD142615598400BF4647 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935DD132615598400BF4647 /* AlbumView.swift */; };
+		7935DD1B2615916600BF4647 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935DD1A2615916600BF4647 /* TodoView.swift */; };
+		7935DD1E2615917B00BF4647 /* DdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935DD1D2615917B00BF4647 /* DdayView.swift */; };
 		79B11D7F26140E3600CC381B /* ShowFunctionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B11D7E26140E3600CC381B /* ShowFunctionsView.swift */; };
 		79EC0CE526088EED00D3D515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC0CE426088EED00D3D515 /* AppDelegate.swift */; };
 		79EC0CE726088EED00D3D515 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC0CE626088EED00D3D515 /* SceneDelegate.swift */; };
-		79EC0CE926088EED00D3D515 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC0CE826088EED00D3D515 /* ContentView.swift */; };
 		79EC0CEB26088EEE00D3D515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79EC0CEA26088EEE00D3D515 /* Assets.xcassets */; };
 		79EC0CEE26088EEE00D3D515 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79EC0CED26088EEE00D3D515 /* Preview Assets.xcassets */; };
 		79EC0CF126088EEE00D3D515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79EC0CEF26088EEE00D3D515 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7935DD132615598400BF4647 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		7935DD1A2615916600BF4647 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		7935DD1D2615917B00BF4647 /* DdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DdayView.swift; sourceTree = "<group>"; };
 		79B11D7E26140E3600CC381B /* ShowFunctionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFunctionsView.swift; sourceTree = "<group>"; };
 		79EC0CE126088EED00D3D515 /* hewi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hewi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EC0CE426088EED00D3D515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79EC0CE626088EED00D3D515 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79EC0CE826088EED00D3D515 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79EC0CEA26088EEE00D3D515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79EC0CED26088EEE00D3D515 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79EC0CF026088EEE00D3D515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,8 +55,10 @@
 		79B11D81261423A400CC381B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				79EC0CE826088EED00D3D515 /* ContentView.swift */,
 				79B11D7E26140E3600CC381B /* ShowFunctionsView.swift */,
+				7935DD132615598400BF4647 /* AlbumView.swift */,
+				7935DD1A2615916600BF4647 /* TodoView.swift */,
+				7935DD1D2615917B00BF4647 /* DdayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,7 +172,9 @@
 			files = (
 				79EC0CE526088EED00D3D515 /* AppDelegate.swift in Sources */,
 				79EC0CE726088EED00D3D515 /* SceneDelegate.swift in Sources */,
-				79EC0CE926088EED00D3D515 /* ContentView.swift in Sources */,
+				7935DD1E2615917B00BF4647 /* DdayView.swift in Sources */,
+				7935DD1B2615916600BF4647 /* TodoView.swift in Sources */,
+				7935DD142615598400BF4647 /* AlbumView.swift in Sources */,
 				79B11D7F26140E3600CC381B /* ShowFunctionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
