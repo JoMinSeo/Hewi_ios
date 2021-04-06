@@ -11,8 +11,8 @@ struct DdayView : View {
     
     var body: some View {
         VStack() {
-            Text("22222")
-        }
+            Text("디데이")
+        }.navigationBarTitle("디데이")
     }
     
 }

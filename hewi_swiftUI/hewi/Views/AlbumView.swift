@@ -11,8 +11,14 @@ struct AlbumView : View {
     
     var body: some View {
         VStack() {
-            Text("11111")
-        }
+            Text("앨범")
+        }.navigationBarTitle("Album")
     }
     
+}
+
+struct AlbumView_Previews: PreviewProvider {
+    static var previews: some View {
+        AlbumView()
+    }
 }
