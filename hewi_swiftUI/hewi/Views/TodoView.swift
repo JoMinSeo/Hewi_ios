@@ -11,8 +11,8 @@ struct TodoView : View {
     
     var body: some View {
         VStack() {
-            Text("33333")
-        }
+            Text("투두")
+        }.navigationBarTitle(Text("투두"))
     }
     
 }
