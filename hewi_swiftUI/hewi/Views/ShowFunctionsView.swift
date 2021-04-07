@@ -12,30 +12,13 @@ struct ImageButton : Identifiable{
     var imageURL = String()
     var name = String()
 }
-//
-//struct Row: Identifiable {
-//    let id = UUID()
-//    let cells: [ImageButton]
-//}
-//
-//extension Row {
-//    static func all() -> [Row] {
-//        return [
-//            Row(cells: [ImageButton(imageURL: "Album", name: "Album"),ImageButton(imageURL: "Dday", name: "D-day"),]),
-//            Row(cells: [ImageButton(imageURL: "ToDo", name: "ToDo"),ImageButton(imageURL: "logo", name: "mola")])
-//        ]
-//    }
-//}
-
 
 struct ShowFunctionsView : View {
     
     //@State private var showingAlert = false
-    
-    //@State private var isLinkActive = false
     @State private var selectedItem: UUID? = nil
     
-    var buttons = [
+    private var buttons = [
         ImageButton(imageURL: "Album", name: "Album"),
         ImageButton(imageURL: "Dday", name: "D-day"),
         ImageButton(imageURL: "ToDo", name: "ToDo"),
@@ -43,8 +26,8 @@ struct ShowFunctionsView : View {
     ]
     
     let columns : [GridItem] = [
-            GridItem(.adaptive(minimum: 150))
-        ]
+        GridItem(.adaptive(minimum: 130))
+    ]
     
     var body: some View {
         NavigationView {
@@ -54,17 +37,12 @@ struct ShowFunctionsView : View {
                     .font(.title)
                     .foregroundColor(.black)
                     .padding()
-                    .navigationBarTitleDisplayMode(.inline)
-                    .navigationBarHidden(true)
-                    .toolbar(content: {
-                        ToolbarItem(placement: .principal, content: {
-                            Text("Hewi")
-                        })
-                    })
                 
-                LazyVGrid(columns: columns, spacing: 30) {
+                
+                LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(buttons) { button in
                         VStack {
+                            
                             Button(action: {
                                 self.selectedItem = button.id
                             }, label: {
@@ -73,7 +51,7 @@ struct ShowFunctionsView : View {
                                     .scaledToFit()
                             }).background(
                                 NavigationLink(destination: SettingView(name: button.name), tag: button.id, selection: $selectedItem) {
-                                    
+                                    EmptyView()
                                 }
                             )
                             .buttonStyle(PlainButtonStyle())
@@ -81,17 +59,23 @@ struct ShowFunctionsView : View {
                             
                             Text(button.name)
                                 .font(.title3)
-
-                        }                    }
-                }.padding(.all, 20)
+                            
+                        }
+                    }
+                }
+                
             }
-            
-        }.navigationViewStyle(StackNavigationViewStyle())
-        
+            .frame(width: 300, height: 100, alignment: .bottom)
+            .padding(.all, 20)
+                        
+            .navigationBarHidden(true)
+            .navigationBarTitle(Text("Home"))
+                        
+        }
     }
     
-    
-    func SettingView(name: String?) -> AnyView {
+    //name을 받아 View를 리턴해주는 함수
+    private func SettingView(name: String?) -> AnyView {
         switch name {
         case "Album":
             return AnyView(AlbumView())
@@ -108,16 +92,8 @@ struct ShowFunctionsView : View {
     }
 }
 
-
 struct ShowFunctionsView_Previews: PreviewProvider {
     static var previews: some View {
         ShowFunctionsView()
     }
 }
-
-//.background(
-//                NavigationLink(destination: Text("OtherView"), isActive: $isLinkActive) {
-//                    EmptyView()
-//                }
-//                .hidden()
-//            )

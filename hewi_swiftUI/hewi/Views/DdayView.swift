@@ -12,7 +12,7 @@ struct DdayView : View {
     var body: some View {
         VStack() {
             Text("디데이")
-        }.navigationBarTitle("디데이")
+        }.navigationBarTitle("D-DAY", displayMode: .inline)
     }
     
 }

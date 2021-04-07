@@ -10,9 +10,9 @@ import SwiftUI
 struct AlbumView : View {
     
     var body: some View {
-        VStack() {
+        VStack {
             Text("앨범")
-        }.navigationBarTitle("Album")
+        }.navigationBarTitle("Album", displayMode: .inline)
     }
     
 }
