@@ -5,7 +5,6 @@
 //  Created by 조민서 on 2021/04/06.
 //
 
-
 import RealmSwift
 
 class Todo: Object, Identifiable{

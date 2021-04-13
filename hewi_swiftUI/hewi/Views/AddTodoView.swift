@@ -43,3 +43,9 @@ struct AddTodoView : View {
         .onDisappear(perform: modelData.deInitData)
     }
 }
+
+struct AddTodoView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddTodoView()
+    }
+}

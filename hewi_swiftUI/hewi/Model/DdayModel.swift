@@ -11,7 +11,7 @@ class DdayModel : Object, Identifiable {
     @objc dynamic var id : Int = 0
     @objc dynamic var startDate : Date = Date()
     @objc dynamic var content : String = ""
-    @objc dynamic var textColor : UIColor = UIColor.black
+    //@objc dynamic var textColor : UIColor = UIColor.black
     @objc dynamic var imageURL : String = ""
     
     // 기본키 설정
@@ -19,11 +19,11 @@ class DdayModel : Object, Identifiable {
         return "id"
     }
     
-    convenience init(startDate: Date, content : String, textColor : UIColor, imageURL : String) {
+    convenience init(startDate: Date, content : String, imageURL : String) {
         self.init()
         self.startDate = startDate
         self.content = content
-        self.textColor = textColor
+        //self.textColor = textColor
         self.imageURL = imageURL
     }
 }
