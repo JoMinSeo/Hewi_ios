@@ -11,14 +11,21 @@ struct TodoProvider : TimelineProvider {
     
     typealias Entry = TodoEntry
     
-    
     func placeholder(in context: Context) -> TodoEntry {
-        let entry = TodoEntry(date: Date(), todo: String("로딩 중"))
+        
+        let pr1 = Todo(title: "로딩즁", desc: "로딩즁", completed: false)
+        let pr2 = Todo(title: "로딩즁2", desc: "로딩즁2", completed: false)
+        
+        let entry = TodoEntry(todo: [pr1, pr2])
         return entry
     }
     
     func getSnapshot(in context: Context, completion: @escaping (TodoEntry) -> Void) {
-        let entry = TodoEntry(date: Date(), todo: String("안녕!"))
+        
+        let pr1 = Todo(title: "로딩즁", desc: "로딩즁", completed: false)
+        let pr2 = Todo(title: "로딩즁2", desc: "로딩즁2", completed: false)
+        
+        let entry = TodoEntry(todo: [pr1,pr2])
         completion(entry)
     }
     
@@ -26,6 +33,10 @@ struct TodoProvider : TimelineProvider {
         let currentDate = Date()
         let refreshDate = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
         
-        
+//        TodoManager.init() { todo in
+//            let entry = TodoEntry(date: currentDate, todo: todo)
+//            let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
+//            completion(timeline)
+//        }
     }
 }

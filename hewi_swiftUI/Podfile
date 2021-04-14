@@ -9,3 +9,11 @@ target 'hewi' do
  
    pod 'RealmSwift'
 end
+
+target 'WidgetGroupExtension' do
+  use_frameworks!
+  
+  pod 'RealmSwift'
+end
+
+

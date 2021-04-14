@@ -16,8 +16,8 @@ struct TodoWidget : Widget {
         StaticConfiguration(kind: kind, provider: TodoProvider()) { entry in
             TodoEntryView(entry: entry)
         }
+        .configurationDisplayName("ToDo 위젯")
+        .description("작성한 ToDo를 볼 수 있습니다.")
         .supportedFamilies([.systemSmall, .systemMedium])
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
     }
 }
