@@ -30,6 +30,7 @@ struct TodoView : View {
                                 Text(todo.desc)
                                     .font(.caption)
                                     .foregroundColor(.blue)
+                                Text("기한: \(todo.timestamp)")
                             })
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(10)

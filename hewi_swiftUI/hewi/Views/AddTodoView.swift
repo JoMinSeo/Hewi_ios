@@ -21,6 +21,10 @@ struct AddTodoView : View {
                 Section(header: Text("Detail")) {
                     TextField("", text: $modelData.desc)
                 }
+                Section(header: Text("Date")) {
+                    DatePicker("When is your time limit", selection: $modelData.timestamp, displayedComponents: .date)
+                    
+                }
             }
             .listStyle(GroupedListStyle())
             .navigationTitle(modelData.updateObject == nil ? "Add Data" : "Update")

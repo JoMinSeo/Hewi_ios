@@ -11,6 +11,7 @@ import RealmSwift
 class ToDoViewModel: ObservableObject {
     @Published var title = ""
     @Published var desc = ""
+    @Published var timestamp = Date()
     
     @Published var todos : [Todo] = []
     
@@ -38,6 +39,7 @@ class ToDoViewModel: ObservableObject {
         let todo = Todo()
         todo.title = title
         todo.desc = desc
+        todo.timestamp = Date()
         
         guard let db = try? Realm() else {return}
         
@@ -48,6 +50,7 @@ class ToDoViewModel: ObservableObject {
             }
             availableObject.title = title
             availableObject.desc = desc
+            availableObject.timestamp = timestamp
         }
         
         fetchData()
