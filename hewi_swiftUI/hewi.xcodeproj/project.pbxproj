@@ -14,7 +14,6 @@
 		797CE1BE261EDF9E00BCAD2A /* DdayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CE1BD261EDF9E00BCAD2A /* DdayModel.swift */; };
 		797CE1C1261EE19000BCAD2A /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797CE1C0261EE19000BCAD2A /* AlbumModel.swift */; };
 		79B11D7F26140E3600CC381B /* ShowFunctionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B11D7E26140E3600CC381B /* ShowFunctionsView.swift */; };
-		79E33E2A261D51FE00C37C34 /* TodoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E33E29261D51FE00C37C34 /* TodoListItem.swift */; };
 		79E33E2F261D587F00C37C34 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E33E2E261D587F00C37C34 /* DatabaseManager.swift */; };
 		79E33E34261D5DD200C37C34 /* ToDoVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E33E33261D5DD200C37C34 /* ToDoVIewModel.swift */; };
 		79E33E38261D6E0A00C37C34 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E33E37261D6E0A00C37C34 /* AddTodoView.swift */; };
@@ -67,13 +66,14 @@
 		49B4C1BFD2DEC8D60DD36D04 /* Pods_hewi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hewi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A745EB78AD774B988454CE /* Pods-WidgetGroupExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetGroupExtension.release.xcconfig"; path = "Target Support Files/Pods-WidgetGroupExtension/Pods-WidgetGroupExtension.release.xcconfig"; sourceTree = "<group>"; };
 		790013A8261C1EEC0016FD80 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		791CC0D7262EB03B006691B4 /* hewi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hewi.entitlements; sourceTree = "<group>"; };
+		791CC0DE262EB0F2006691B4 /* WidgetGroupExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetGroupExtension.entitlements; sourceTree = "<group>"; };
 		7935DD132615598400BF4647 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		7935DD1A2615916600BF4647 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		7935DD1D2615917B00BF4647 /* DdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DdayView.swift; sourceTree = "<group>"; };
 		797CE1BD261EDF9E00BCAD2A /* DdayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DdayModel.swift; sourceTree = "<group>"; };
 		797CE1C0261EE19000BCAD2A /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		79B11D7E26140E3600CC381B /* ShowFunctionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFunctionsView.swift; sourceTree = "<group>"; };
-		79E33E29261D51FE00C37C34 /* TodoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItem.swift; sourceTree = "<group>"; };
 		79E33E2E261D587F00C37C34 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		79E33E33261D5DD200C37C34 /* ToDoVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVIewModel.swift; sourceTree = "<group>"; };
 		79E33E37261D6E0A00C37C34 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
@@ -178,14 +178,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		79E33E28261D51E500C37C34 /* Widget */ = {
-			isa = PBXGroup;
-			children = (
-				79E33E29261D51FE00C37C34 /* TodoListItem.swift */,
-			);
-			path = Widget;
-			sourceTree = "<group>";
-		};
 		79E33E2D261D586C00C37C34 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +197,7 @@
 		79EC0CD826088EED00D3D515 = {
 			isa = PBXGroup;
 			children = (
+				791CC0DE262EB0F2006691B4 /* WidgetGroupExtension.entitlements */,
 				79EC0CE326088EED00D3D515 /* hewi */,
 				79F4458C2625705B005F85BB /* WidgetGroup */,
 				79EC0CE226088EED00D3D515 /* Products */,
@@ -225,9 +218,9 @@
 		79EC0CE326088EED00D3D515 /* hewi */ = {
 			isa = PBXGroup;
 			children = (
+				791CC0D7262EB03B006691B4 /* hewi.entitlements */,
 				79E33E2D261D586C00C37C34 /* Manager */,
 				79E33E32261D5DB200C37C34 /* ViewModel */,
-				79E33E28261D51E500C37C34 /* Widget */,
 				790013A7261C1EC80016FD80 /* Model */,
 				79B11D81261423A400CC381B /* Views */,
 				7954CE962612F26C00AF0795 /* Resources */,
@@ -513,7 +506,6 @@
 				7935DD142615598400BF4647 /* AlbumView.swift in Sources */,
 				79E33E38261D6E0A00C37C34 /* AddTodoView.swift in Sources */,
 				790013A9261C1EEC0016FD80 /* TodoModel.swift in Sources */,
-				79E33E2A261D51FE00C37C34 /* TodoListItem.swift in Sources */,
 				79B11D7F26140E3600CC381B /* ShowFunctionsView.swift in Sources */,
 				79E33E2F261D587F00C37C34 /* DatabaseManager.swift in Sources */,
 			);
@@ -678,8 +670,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = hewi/hewi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hewi/Preview Content\"";
+				DEVELOPMENT_TEAM = JAQ7V4JFMH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = hewi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -700,8 +694,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = hewi/hewi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hewi/Preview Content\"";
+				DEVELOPMENT_TEAM = JAQ7V4JFMH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = hewi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -721,7 +717,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetGroupExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAQ7V4JFMH;
 				INFOPLIST_FILE = WidgetGroup/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -742,7 +740,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetGroupExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAQ7V4JFMH;
 				INFOPLIST_FILE = WidgetGroup/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

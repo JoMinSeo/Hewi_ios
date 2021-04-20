@@ -13,18 +13,22 @@ struct AddTodoView : View {
     
     var body: some View {
         NavigationView {
-            List {
+            List{
                 Section(header: Text("Title")) {
                     TextField("", text: $modelData.title)
                 }
+                .padding(.vertical, 5)
                 
                 Section(header: Text("Detail")) {
                     TextField("", text: $modelData.desc)
                 }
-                Section(header: Text("Date")) {
-                    DatePicker("When is your time limit", selection: $modelData.timestamp, displayedComponents: .date)
-                    
-                }
+                .padding(.vertical, 5)
+                
+//                Section(header: Text("Date")) {
+//                    DatePicker("When is your time limit", selection: $modelData.timestamp, displayedComponents: .date)
+//
+//                }
+//                .padding(.vertical, 5)
             }
             .listStyle(GroupedListStyle())
             .navigationTitle(modelData.updateObject == nil ? "Add Data" : "Update")

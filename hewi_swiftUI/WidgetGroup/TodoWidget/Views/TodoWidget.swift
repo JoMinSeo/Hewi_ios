@@ -13,7 +13,7 @@ struct TodoWidget : Widget {
     private let kind: String = "TodoWidget"
     
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: TodoProvider()) { entry in
+        IntentConfiguration(kind: kind, intent: WidgetKindIntent.self ,provider: TodoProvider()) { entry in
             TodoEntryView(entry: entry)
         }
         .configurationDisplayName("ToDo 위젯")

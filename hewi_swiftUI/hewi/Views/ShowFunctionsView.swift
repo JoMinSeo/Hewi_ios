@@ -38,7 +38,6 @@ struct ShowFunctionsView : View {
                     .foregroundColor(.black)
                     .padding()
                 
-                
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(buttons) { button in
                         VStack {

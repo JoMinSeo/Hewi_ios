@@ -30,7 +30,7 @@ struct TodoView : View {
                                 Text(todo.desc)
                                     .font(.caption)
                                     .foregroundColor(.blue)
-                                Text("기한: \(todo.timestamp)")
+                                //Text("기한: \(todo.timestamp)")
                             })
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(10)
@@ -62,8 +62,7 @@ struct TodoView : View {
         }
         .navigationBarTitle("TODO", displayMode: .inline)
         .navigationBarItems(
-            trailing: Button(action: {
-                                modelData.openNewPage.toggle()}
+            trailing: Button(action: {modelData.openNewPage.toggle()}
             ){
                 Image(systemName: "plus")
                     .font(.title)
@@ -71,11 +70,6 @@ struct TodoView : View {
                 AddTodoView()
                     .environmentObject(modelData)
             })
-        
-        
-        
-        
-        
     }
 }
 
@@ -90,7 +84,6 @@ struct NavigationConfigurator: UIViewControllerRepresentable {
             self.configure(nc)
         }
     }
-    
 }
 
 struct TodoView_Previews: PreviewProvider {

@@ -7,36 +7,35 @@
 
 import WidgetKit
 
-struct TodoProvider : TimelineProvider {
+struct TodoProvider : IntentTimelineProvider {
     
+    var modelData = TodoManager()
     typealias Entry = TodoEntry
     
     func placeholder(in context: Context) -> TodoEntry {
         
-        let pr1 = Todo(title: "로딩즁", desc: "로딩즁", completed: false)
-        let pr2 = Todo(title: "로딩즁2", desc: "로딩즁2", completed: false)
+        let pr1 = Todo(title: "로딩즁", desc: "로딩즁")
+        let pr2 = Todo(title: "로딩즁2", desc: "로딩즁2")
         
         let entry = TodoEntry(todo: [pr1, pr2])
         return entry
     }
     
-    func getSnapshot(in context: Context, completion: @escaping (TodoEntry) -> Void) {
+    func getSnapshot(for configuration: WidgetKindIntent, in context: Context, completion: @escaping (TodoEntry) -> Void) {
         
-        let pr1 = Todo(title: "로딩즁", desc: "로딩즁", completed: false)
-        let pr2 = Todo(title: "로딩즁2", desc: "로딩즁2", completed: false)
+        let pr1 = Todo(title: "로딩즁", desc: "로딩즁")
+        let pr2 = Todo(title: "로딩즁2", desc: "로딩즁2")
         
         let entry = TodoEntry(todo: [pr1,pr2])
         completion(entry)
     }
     
-    func getTimeline(in context: Context, completion: @escaping (Timeline<TodoEntry>) -> Void) {
+    func getTimeline(for configuration: WidgetKindIntent, in context: Context, completion: @escaping (Timeline<TodoEntry>) -> Void) {
         let currentDate = Date()
         let refreshDate = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
         
-//        TodoManager.init() { todo in
-//            let entry = TodoEntry(date: currentDate, todo: todo)
-//            let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
-//            completion(timeline)
-//        }
+//        let entry = TodoEntry(date: currentDate, todo: modelData.fetchData())
+//        let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
+//        completion(timeline)
     }
 }
